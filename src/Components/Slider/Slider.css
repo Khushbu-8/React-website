@@ -1,0 +1,74 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+.carousel-inner{
+    height: 500px;
+
+}
+.carousel-caption{
+    color: #000;
+    top: 15%;
+    right: 90%!important;
+   
+}
+.carousel-caption h5{
+    font-size: 20px;
+    font-weight: 700;
+    word-spacing: 5px;
+    
+}
+.carousel-caption h5 span{
+    color: #64b496;
+    border-bottom:2px solid #64b496 ;
+}
+.carousel-caption h1{
+   font-size: 48px;
+   font-weight: 600;
+   padding: 20px 0;
+   font-family: "Manrope", sans-serif;
+}
+.carousel-caption p{
+    color: #7a7a7a;
+    padding-bottom: 10px;
+    font-size: 15px;
+    font-weight: 400;
+}
+.carousel-caption .btn{
+    width: 120px;
+    height: 40px;
+    background: #64b496;
+    color: #fff;
+}
+.carousel-control-prev, .carousel-control-next{
+    width: 5%;
+}
+.carousel::after{
+        width: 100px;
+        height: 100px;
+        content: "";
+        background-image: url(../imgs/slide-icon-1.png);
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        position: absolute;
+        bottom: 0px;
+        left: 10px;
+        z-index: 0;
+         opacity: 0.5;
+}
+.carousel-item::before {
+        width: 80px;
+        height: 80px;
+        content: "";
+        background-image: url(../imgs/slide-shap-2.png);
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        position: absolute;
+        z-index: 99900;
+        top: 5px;
+        left:600px;
+        opacity: 0.5;
+}

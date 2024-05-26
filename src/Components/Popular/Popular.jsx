@@ -28,7 +28,7 @@ const Popular = () => {
     }
     return (
         <>
-            <section>
+            <section className='py-5'>
                 <div className="container">
                     <div className="row">
                         <div className="col-12 pb-5 ">
@@ -38,8 +38,8 @@ const Popular = () => {
                             </div>
                         </div>
                         <div className="col-12 d-flex flex-wrap">
-                            <div className="col-12 col-lg-3 p-1 d-flex flex-wrap cat" style={{ height: '100vh' }}>
-                                <div className="col-12 col-sm-6 col-lg-12">
+                            <div className="col-12 col-lg-3 p-1 d-flex flex-wrap">
+                                <div className="col-12 col-sm-6 col-lg-12 ">
                                     <div className="p-list">
                                         <ul>
                                             <li>
@@ -60,9 +60,9 @@ const Popular = () => {
                                         }
                                     </div>
                                 </div>
-                                <div className="d-none d-sm-flex col-sm-6 col-lg-12 p-2">
+                                <div className="d-none d-sm-flex col-sm-6 col-lg-12 ">
                                     <div className="p-img rounded">
-                                        <img src="imgs/p-bnr.jpg" alt="" />
+                                        <img src="imgs/p-bnr.jpg" className='img-fluid' alt="" />
                                     </div>
                                 </div>
                             </div>

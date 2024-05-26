@@ -4,6 +4,10 @@ footer{
     font-size: 15px!important;
     border-top: 1px solid #e9e9e9;
 }
+.f-bottom{
+    border-top: 1px solid #e9e9e9;
+}
+
 .f-logo p{
     font-size: 15px!important;
 }
@@ -32,35 +36,15 @@ footer a:hover{
 .social span:hover{
     color: #64b496;
 }
-.swiper-container {
-    margin-left: auto;
-    margin-right: auto;
-    position: relative;
-    overflow: hidden;
-    list-style: none;
-    padding: 0;
-    z-index: 1
+.pay-img{
+    width: 90px;
+    height: 90px;
+    
 }
- .swiper-wrapper {
+.pay-img img{
     width: 100%;
-    height: 101%;
-    z-index: 1;
-    z-index: 1;
-    transform: translate3d(-828px, 0px, 0px);
-     transition: all 0ms ease 0s;
- }
- .swiper-slide{
     height: 100%;
-    width: 80px;
-    margin-right: 12px;
-    flex-shrink: 0;
-    position: relative;
-    display: flex;
-    transition-property: transform;
+    border-radius: 5px;
+    object-fit: cover;
 
- }
-.cr-payment-image{
-    position: relative;
-    display: flex;
 }
- 

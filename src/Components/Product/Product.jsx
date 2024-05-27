@@ -23,7 +23,7 @@ const Product = () => {
                                     <div className="col-12 col-sm-6 p-2">
                                         <div class="p-card card w-100">
                                             <div className="pc-img">
-                                                <img src="./imgs/p1.jpg" class="card-img-top img-fluid" alt="..." />
+                                                <img src="./imgs/p2.jpg" class="card-img-top img-fluid" alt="..." />
                                                 <div className="view">
                                                     <div className="view-btn m-1">
                                                         <FaRegHeart />

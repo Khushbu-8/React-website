@@ -1,5 +1,6 @@
 import React from 'react'
 import './test.css'
+import { Testimonal } from './Test-data';
 // star
 import { IoMdStar } from "react-icons/io";
 
@@ -16,78 +17,35 @@ const Test = () => {
                             </div>
                         </div>
                         <div className="col-12 d-flex flex-wrap justify-content-center">
-                            <div className="col-12 col-md-6 col-lg-4  py-5 px-2">
-                                <div class="test card text-center">
-                                    <div className="test-img">
-                                        <img src="imgs/test-1.jpg" alt="" />
-                                    </div>
-                                    <div className="quot">
-                                        <img src="imgs/quot.png" alt="" />
-                                    </div>
-                                    <div class="ard-body">
-                                        <span>Co Founder</span>
-                                        <h5 class="card-title pt-2">Stephen Smith</h5>
-                                        <p class="card-text py-2">“eiusmpsu dolor sit amet, conse cte tur ng elit, sed do eiusmod tem lacus vel facilisis.”
-                                        </p>
-                                        <div className="star">
-                                          <span className='fs-5'><IoMdStar /></span>
-                                          <span className='fs-5'><IoMdStar /></span>
-                                          <span className='fs-5'><IoMdStar /></span>
-                                          <span className='fs-5'><IoMdStar /></span>
-                                          <span className='fs-5'><IoMdStar /></span>
-                                       
+                            {
+                                Testimonal.map((test) => {
+                                    return (
+                                        <div className="col-12 col-md-6 col-lg-4  py-5 px-2" key={test.id}>
+                                            <div class="test card text-center">
+                                                <div className="test-img">
+                                                    <img src={test.img} alt="" />
+                                                </div>
+                                                <div className="quot">
+                                                    <img src={test.qut}alt="" />
+                                                </div>
+                                                <div class="ard-body">
+                                                    <span>{test.position}</span>
+                                                    <h5 class="card-title pt-2">{test.name}</h5>
+                                                    <p class="card-text py-2">{test.content}</p>
+                                                    <div className="star">
+                                                        <span className='fs-5'><IoMdStar /></span>
+                                                        <span className='fs-5'><IoMdStar /></span>
+                                                        <span className='fs-5'><IoMdStar /></span>
+                                                        <span className='fs-5'><IoMdStar /></span>
+                                                        <span className='fs-5'><IoMdStar /></span>
+
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="col-12 col-md-6 col-lg-4  py-5 px-2">
-                                <div class="test card text-center">
-                                    <div className="test-img">
-                                        <img src="imgs/test-2.jpg" alt="" />
-                                    </div>
-                                    <div className="quot">
-                                        <img src="imgs/quot.png" alt="" />
-                                    </div>
-                                    <div class="ard-body">
-                                        <span>Manager</span>
-                                        <h5 class="card-title pt-2">Lorem Robinson</h5>
-                                        <p class="card-text py-2">“eiusmpsu dolor sit amet, conse cte tur ng elit, sed do eiusmod tem lacus vel facilisis.”
-                                        </p>
-                                        <div className="star">
-                                          <span className='fs-5'><IoMdStar /></span>
-                                          <span className='fs-5'><IoMdStar /></span>
-                                          <span className='fs-5'><IoMdStar /></span>
-                                          <span className='fs-5'><IoMdStar /></span>
-                                          <span className='fs-5'><IoMdStar /></span>
-                                       
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="col-12 col-md-6 col-lg-4  py-5 px-2">
-                                <div class="test card text-center">
-                                    <div className="test-img">
-                                        <img src="imgs/test-1.jpg" alt="" />
-                                    </div>
-                                    <div className="quot">
-                                        <img src="imgs/quot.png" alt="" />
-                                    </div>
-                                    <div class="ard-body">
-                                        <span>Team Leader</span>
-                                        <h5 class="card-title pt-2">Saddika Alard</h5>
-                                        <p class="card-text py-2">“eiusmpsu dolor sit amet, conse cte tur ng elit, sed do eiusmod tem lacus vel facilisis.”
-                                        </p>
-                                        <div className="star">
-                                          <span className='fs-5'><IoMdStar /></span>
-                                          <span className='fs-5'><IoMdStar /></span>
-                                          <span className='fs-5'><IoMdStar /></span>
-                                          <span className='fs-5'><IoMdStar /></span>
-                                          <span className='fs-5'><IoMdStar /></span>
-                                       
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                                    )
+                                })
+                            }
                         </div>
 
                     </div>
